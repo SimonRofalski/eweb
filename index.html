@@ -7,50 +7,74 @@
     content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
   />
 
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    type="text/css"
+  />
+  <link
+    href="http://fonts.googleapis.com/css?family=Lato"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="http://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet"
+    type="text/css"
+  />
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
-<body>
-  <div>
-    <div></div>
+<body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+  <div id="header" class="container-fluid d-flex">
+    <div class="menu-overlay"></div>
 
-    <div>
-      <ul>
-        <li><a>Home</a></li>
-        <li><a>Über mich</a></li>
-        <li>
-          <a>Lebenslauf</a>
-          <div>
+    <div class="menu">
+      <div class="toggler">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <ul class="nav-content" id="navigation">
+        <li><a class="nav-link" href="#header">Home</a></li>
+        <li><a class="nav-link" href="#about">Über mich</a></li>
+        <li class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+            >Lebenslauf</a
+          >
+          <div id="dropdown-menu">
             <ul>
-              <li><a>Meine Skills</a></li>
+              <li><a class="dropdown-item" href="#cv">Meine Skills</a></li>
               <li>
-                <a>Berufserfahrungen</a>
+                <a class="dropdown-item" href="#experience"
+                  >Berufserfahrungen</a
+                >
               </li>
-              <li><a>Ausbildung</a></li>
-              <li><a>Zertifikate</a></li>
+              <li><a class="dropdown-item" href="#education">Ausbildung</a></li>
+              <li><a class="dropdown-item" href="#diplomas">Zertifikate</a></li>
             </ul>
           </div>
         </li>
-        <li><a>Portfolio</a></li>
-        <li><a>Kontakt</a></li>
+        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#contact">Kontakt</a></li>
       </ul>
     </div>
 
-    <div>
+    <div class="row align-items-center justify-content-center text-center">
       <div>
         <h1>Simon Rofalski</h1>
-        <hr />
       </div>
     </div>
   </div>
 
-  <div>
-    <div>
-      <div>
-        <div>
-          <img src="/assets/RoSi.jpg" alt="picture" />
+  <div id="about" class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-12 picture">
+          <img src="/assets/RoSi.jpg" class="rounded-circle" alt="picture" />
         </div>
-        <div>
+        <div class="col-md-9 col-sm-12 offset-md-1">
           <h2>Über mich</h2>
           <p>
             Mein Name ist Simon Rofalski, ich bin 26 Jahre alt und in
@@ -76,58 +100,78 @@
     </div>
   </div>
 
-  <div>
-    <div>
-      <div>
-        <div>
+  <div class="container-fluid" id="cv">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-12">
           <h3>Meine Skills</h3>
         </div>
-        <div>
-          <div>
+        <div class="col-md-9 col-sm-12 offset-md-1">
+          <div class="skills">
             <h4>Programmiersprachen</h4>
 
-            <div>
+            <div class="skill-item">
               <h4>HTML</h4>
-            </div>
-
-            <div>
-              <h4>CSS</h4>
-            </div>
-
-            <div>
-              <h4>JS</h4>
-            </div>
-          </div>
-
-          <div>
-            <h4>Sprachen</h4>
-
-            <div>
-              <h4>Deutsch</h4>
-              <div>
-                <div>Muttersprache</div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%"></div>
               </div>
             </div>
 
-            <div>
+            <div class="skill-item">
+              <h4>CSS</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>JS</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 55%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>Python</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills">
+            <h4>Sprachen</h4>
+
+            <div class="skill-item">
+              <h4>Deutsch</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 100%">
+                  Muttersprache
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item">
               <h4>Englisch</h4>
-              <div>
-                <div>Verhandlungssicher</div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%">
+                  Verhandlungssicher
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <hr />
+      <hr id="experience" />
 
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-md-2 col-sm-12">
           <h3>Berufserfahrungen</h3>
         </div>
-        <div>
-          <div>
-            <div>
+        <div class="col-md-9 col-sm-12 offset-md-1">
+          <div class="exp">
+            <div class="box">
               <h4>Projektleiter</h4>
               <h6>Kilchenmann AG&emsp;&#8226;&emsp;seit Mai 2019</h6>
               <p>
@@ -136,7 +180,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="box">
               <h4>Retention & Sales Manager</h4>
               <h6>
                 Competention Call Center (Swisscom)&emsp;&#8226;&emsp; August
@@ -145,7 +189,7 @@
               <p>Privatkunden motiviert Kündigungsentscheid zurückzuziehen</p>
             </div>
 
-            <div>
+            <div class="box">
               <h4>Projektmanager</h4>
               <h6>
                 Pix Software GmbH&emsp;&#8226;&emsp; Februar 2018 - Juli 2018
@@ -155,7 +199,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="box">
               <h4>Lehrstelle IT-Systemkaufmann</h4>
               <h6>
                 Pix Software GmbH&emsp;&#8226;&emsp; August 2015 - Januar 2018
@@ -171,19 +215,19 @@
         </div>
       </div>
 
-      <hr />
+      <hr id="education" />
 
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-md-2 col-sm-12">
           <h3>Ausbildung</h3>
         </div>
-        <div>
-          <div>
+        <div class="col-md-9 col-sm-12 offset-md-1">
+          <div class="box">
             <h4>Bachelor of Science Wirtschaftsinformatik</h4>
             <h6>Berner Fachhochschule&emsp;&#8226;&emsp;Seit September 2020</h6>
           </div>
 
-          <div>
+          <div class="box">
             <h4>Berufsschule im Rahmen der Ausbildung</h4>
             <h6>
               Berufskolleg Kaufmannsschule der Stadt
@@ -191,7 +235,7 @@
             </h6>
           </div>
 
-          <div>
+          <div class="box">
             <h4>Gymnasiale Fachmaturität</h4>
             <h6>
               Berufliches Gymnasium Mönchengladbach&emsp;&#8226;&emsp;September
@@ -201,19 +245,19 @@
         </div>
       </div>
 
-      <hr />
+      <hr id="diplomas" />
 
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-md-2 col-sm-12">
           <h3>Zertifikate</h3>
         </div>
-        <div>
-          <div>
+        <div class="col-md-9 col-sm-12 offset-md-1">
+          <div class="box">
             <h4>Projektmanagementkurs</h4>
             <h6>erhalten durch ennovion&emsp;&#8226;&emsp;24. Juni 2021</h6>
           </div>
 
-          <div>
+          <div class="box">
             <h4>Projektmanagementkurs</h4>
             <h6>erhalten durch edupool&emsp;&#8226;&emsp;24. Juni 2020</h6>
           </div>
@@ -222,30 +266,80 @@
     </div>
   </div>
 
-  <div>
+  <div class="container-fluid" id="portfolio">
     <h2>Portfolio Ideen</h2>
 
-    <div>
-      <div>
-        <ul>
-          <li>
-            <a href="https://codepen.io/juliangarnier/pen/ZeEpgd"
-              >Drawing Animation</a
-            >
-          </li>
-          <li>
-            <a href="https://codepen.io/SoyEva/pen/gXqWNq">Scroll Animation</a>
-          </li>
-          <li>
-            <a href="https://codepen.io/MightyShaban/pen/qBqRMN">Nav Bar</a>
-          </li>
-        </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd1c3895999a4f9c5e4ac57e6e9fa2fb&auto=format&fit=crop&w=1950&q=80"
+          />
+          <div class="overlay">
+            <h3 class="project-title">Project name</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <img
+            src="https://images.unsplash.com/photo-1437422061949-f6efbde0a471?ixlib=rb-0.3.5&s=a585a174501286c4b61c78f955265a08&auto=format&fit=crop&w=1950&q=80"
+          />
+          <div class="overlay">
+            <h3 class="project-title">Project name</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd1c3895999a4f9c5e4ac57e6e9fa2fb&auto=format&fit=crop&w=1950&q=80"
+          />
+          <div class="overlay">
+            <h3 class="project-title">Project name</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <img
+            src="https://images.unsplash.com/photo-1437422061949-f6efbde0a471?ixlib=rb-0.3.5&s=a585a174501286c4b61c78f955265a08&auto=format&fit=crop&w=1950&q=80"
+          />
+          <div class="overlay">
+            <h3 class="project-title">Project name</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd1c3895999a4f9c5e4ac57e6e9fa2fb&auto=format&fit=crop&w=1950&q=80"
+          />
+          <div class="overlay">
+            <h3 class="project-title">Project name</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <img
+            src="https://images.unsplash.com/photo-1437422061949-f6efbde0a471?ixlib=rb-0.3.5&s=a585a174501286c4b61c78f955265a08&auto=format&fit=crop&w=1950&q=80"
+          />
+          <div class="overlay">
+            <h3 class="project-title">Project name</h3>
+          </div>
+          <ul>
+            <li>
+              <a href="https://codepen.io/juliangarnier/pen/ZeEpgd"
+                >Drawing Animation</a
+              >
+            </li>
+            <li>
+              <a href="https://codepen.io/SoyEva/pen/gXqWNq"
+                >Scroll Animation</a
+              >
+            </li>
+            <li>
+              <a href="https://codepen.io/MightyShaban/pen/qBqRMN">Nav Bar</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
   <footer>
-    <div>
+    <div class="footer-content">
       <div>
         <h4>E-Mail Adresse</h4>
         <p>simon-rofalski@gmx.de</p>
@@ -262,12 +356,26 @@
         <a
           href="https://www.linkedin.com/in/simon-rofalski-b92289166/"
           target="_blank"
-          >linkedin
+        >
+          <i class="fab fa-linkedin-in"></i>
         </a>
 
-        <a href="https://github.com/SimonRofalski" target="_blank">github </a>
-        <a href="https://instragram.com/simon.rflsk" target="_blank"> insta</a>
+        <a href="https://github.com/SimonRofalski" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://instragram.com/simon.rflsk" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"
+  ></script>
+  <script src="script.js"></script>
 </body>

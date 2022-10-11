@@ -13,7 +13,8 @@ h6 {
 
 p,
 span,
-a {
+a,
+li {
   font-family: "Raleway", sans-serif !important;
 }
 
@@ -308,6 +309,12 @@ a {
 
 #cv .box p {
   color: #888;
+}
+
+#cv .logo {
+  max-width: 4cm;
+  max-height: 3cm;
+  float: right;
 }
 
 /* P O R T F O L I O */

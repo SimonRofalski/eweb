@@ -221,12 +221,6 @@ li {
   width: 200px;
 }
 
-@media (max-width: 992px) {
-  .picture {
-    display: none;
-  }
-}
-
 /* C V */
 
 #cv {

@@ -61,7 +61,8 @@ li {
 
 /* H E A D E R */
 #header {
-  background-image: url(https://cdn.pixabay.com/photo/2022/09/03/21/32/chile-7430434_960_720.jpg);
+  min-height: 100vh;
+  background-image: url(https://pixabay.com/get/g936ba95aaf74989695e7b5e4eaf477d1b03879cd7e8a9135c8945415fb846c1e0c421d1cd21535b676d36c8f0af27901_1920.jpg);
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -219,6 +220,12 @@ li {
 
 #about img {
   width: 200px;
+}
+
+@media (max-width: 992px) {
+  .picture {
+    display: none;
+  }
 }
 
 /* C V */

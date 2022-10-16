@@ -23,6 +23,11 @@
     type="text/css"
   />
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
@@ -63,14 +68,16 @@
 
     <div class="row align-items-center justify-content-center text-center">
       <div>
-        <h1>Simon Rofalski</h1>
+        <h1 class="animate__animated animate__pulse animate__infinite">
+          Simon Rofalski
+        </h1>
       </div>
     </div>
   </div>
 
   <div id="about" class="container-fluid">
     <div class="container">
-      <div class="row">
+      <div data-aos="fade-in" class="row">
         <div class="col-md-2 col-sm-12 picture">
           <img src="RoSi.jpg" class="rounded-circle" alt="picture" />
         </div>
@@ -104,48 +111,68 @@
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-12">
-          <h3>Meine Skills</h3>
+          <h3 data-aos="fade-right">Meine Skills</h3>
         </div>
         <div class="col-md-9 col-sm-12 offset-md-1">
           <div class="skills">
-            <h4>Programmiersprachen</h4>
+            <h4 data-aos="zoom-in-right">Programmiersprachen</h4>
 
             <div class="skill-item">
               <h4>HTML</h4>
               <div class="progress">
-                <div class="progress-bar" style="width: 85%"></div>
+                <div
+                  data-aos="slide-right"
+                  class="progress-bar"
+                  style="width: 85%"
+                ></div>
               </div>
             </div>
 
             <div class="skill-item">
               <h4>CSS</h4>
               <div class="progress">
-                <div class="progress-bar" style="width: 60%"></div>
+                <div
+                  data-aos="slide-right"
+                  class="progress-bar"
+                  style="width: 60%"
+                ></div>
               </div>
             </div>
 
             <div class="skill-item">
               <h4>JS</h4>
               <div class="progress">
-                <div class="progress-bar" style="width: 55%"></div>
+                <div
+                  data-aos="slide-right"
+                  class="progress-bar"
+                  style="width: 55%"
+                ></div>
               </div>
             </div>
 
             <div class="skill-item">
               <h4>Python</h4>
               <div class="progress">
-                <div class="progress-bar" style="width: 55%"></div>
+                <div
+                  data-aos="slide-right"
+                  class="progress-bar"
+                  style="width: 55%"
+                ></div>
               </div>
             </div>
           </div>
 
           <div class="skills">
-            <h4>Sprachen</h4>
+            <h4 data-aos="zoom-in-right">Sprachen</h4>
 
             <div class="skill-item">
               <h4>Deutsch</h4>
               <div class="progress">
-                <div class="progress-bar" style="width: 100%">
+                <div
+                  data-aos="slide-right"
+                  class="progress-bar"
+                  style="width: 100%"
+                >
                   Muttersprache
                 </div>
               </div>
@@ -154,7 +181,11 @@
             <div class="skill-item">
               <h4>Englisch</h4>
               <div class="progress">
-                <div class="progress-bar" style="width: 80%">
+                <div
+                  data-aos="slide-right"
+                  class="progress-bar"
+                  style="width: 80%"
+                >
                   Verhandlungssicher
                 </div>
               </div>
@@ -167,11 +198,11 @@
 
       <div class="row">
         <div class="col-md-2 col-sm-12">
-          <h3>Berufserfahrungen</h3>
+          <h3 data-aos="fade-right">Berufserfahrungen</h3>
         </div>
         <div class="col-md-9 col-sm-12 offset-md-1">
           <div class="exp">
-            <div class="box">
+            <div data-aos="fade-left" class="box">
               <a href="https://www.kilchenmann.ch/"
                 ><img
                   class="logo"
@@ -191,7 +222,7 @@
               </ul>
             </div>
 
-            <div class="box">
+            <div data-aos="fade-left" class="box">
               <a href="https://www.yourccc.com/landing.php?l=de"
                 ><img
                   class="logo"
@@ -215,7 +246,7 @@
               </ul>
             </div>
 
-            <div class="box">
+            <div data-aos="fade-left" class="box">
               <a href="https://www.pixsoftware.de/home"
                 ><img
                   class="logo"
@@ -236,7 +267,7 @@
               </ul>
             </div>
 
-            <div class="box">
+            <div data-aos="fade-left" class="box">
               <a href="https://www.pixsoftware.de/home"
                 ><img
                   class="logo"
@@ -267,15 +298,15 @@
 
       <div class="row">
         <div class="col-md-2 col-sm-12">
-          <h3>Ausbildung</h3>
+          <h3 data-aos="fade-right">Ausbildung</h3>
         </div>
         <div class="col-md-9 col-sm-12 offset-md-1">
-          <div class="box">
+          <div data-aos="fade-left" class="box">
             <h4>Bachelor of Science Wirtschaftsinformatik</h4>
             <h6>Berner Fachhochschule&emsp;&#8226;&emsp;Seit September 2020</h6>
           </div>
 
-          <div class="box">
+          <div data-aos="fade-left" class="box">
             <h4>Berufsschule im Rahmen der Ausbildung</h4>
             <h6>
               Berufskolleg Kaufmannsschule der Stadt
@@ -283,7 +314,7 @@
             </h6>
           </div>
 
-          <div class="box">
+          <div data-aos="fade-left" class="box">
             <h4>Gymnasiale Fachmaturität</h4>
             <h6>
               Berufliches Gymnasium Mönchengladbach&emsp;&#8226;&emsp;September
@@ -297,15 +328,15 @@
 
       <div class="row">
         <div class="col-md-2 col-sm-12">
-          <h3>Zertifikate</h3>
+          <h3 data-aos="fade-right">Zertifikate</h3>
         </div>
         <div class="col-md-9 col-sm-12 offset-md-1">
-          <div class="box">
+          <div data-aos="fade-left" class="box">
             <h4>Projektmanagementkurs</h4>
             <h6>erhalten durch ennovion&emsp;&#8226;&emsp;24. Juni 2021</h6>
           </div>
 
-          <div class="box">
+          <div data-aos="fade-left" class="box">
             <h4>Projektmanagementkurs</h4>
             <h6>erhalten durch edupool&emsp;&#8226;&emsp;24. Juni 2020</h6>
           </div>
@@ -372,4 +403,11 @@
     src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"
   ></script>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: true,
+    });
+  </script>
 </body>

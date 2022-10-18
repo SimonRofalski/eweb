@@ -22,7 +22,7 @@ li {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
 }
 
 /* Track */
@@ -32,7 +32,7 @@ li {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #11abb0;
+  background: #ce2626;
 }
 
 /* Handle on hover */
@@ -40,10 +40,10 @@ li {
   background: #159296;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 412px) {
   #header {
-    background-size: initial !important;
-    background-position: top !important;
+    background-size: cover !important;
+    background-position: left !important;
   }
 
   #header h1 {
@@ -62,7 +62,7 @@ li {
 /* H E A D E R */
 #header {
   min-height: 100vh;
-  background-image: url(https://pixabay.com/get/g936ba95aaf74989695e7b5e4eaf477d1b03879cd7e8a9135c8945415fb846c1e0c421d1cd21535b676d36c8f0af27901_1920.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_960_720.jpg);
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -201,12 +201,58 @@ li {
   color: #f5f5f5;
 }
 
+/* Mausanimation */
+
+.middle {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouse {
+  width: 50px;
+  height: 90px;
+  border: 4px solid #e0ded6;
+  border-radius: 60px;
+}
+
+.mouse::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 25px;
+  background-color: rgb(247, 238, 238);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 15px;
+  }
+  to {
+    opacity: 0;
+    top: 75px;
+  }
+}
+
 /* A B O U T */
 
 #about {
   padding-top: 80px;
   padding-bottom: 80px;
   background: #2b2b2b;
+}
+/* Link Mönchengladbach*/
+a:link,
+a:visited {
+  color: white;
 }
 
 #about h2 {

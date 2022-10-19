@@ -52,16 +52,14 @@
             <ul>
               <li><a class="dropdown-item" href="#cv">Meine Skills</a></li>
               <li>
-                <a class="dropdown-item" href="#experience"
-                  >Berufserfahrungen</a
-                >
+                <a class="dropdown-item" href="#experience">Erfahrungen</a>
               </li>
               <li><a class="dropdown-item" href="#education">Ausbildung</a></li>
               <li><a class="dropdown-item" href="#diplomas">Zertifikate</a></li>
             </ul>
           </div>
         </li>
-        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#gallery">Galerie</a></li>
         <li><a class="nav-link" href="#contact">Kontakt</a></li>
       </ul>
     </div>
@@ -71,6 +69,9 @@
         <h1 class="animate__animated animate__pulse animate__infinite">
           Simon Rofalski
         </h1>
+        <div class="middle">
+          <div class="mouse"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -85,7 +86,12 @@
           <h2>Über mich</h2>
           <p>
             Mein Name ist Simon Rofalski, ich bin 26 Jahre alt und in
-            Mönchengladbach aufgewachsen.
+            <a
+              class="city"
+              href="https://www.google.ch/maps/place/M%C3%B6nchengladbach,+Deutschland/@51.1655111,6.2737327,11z/data=!3m1!4b1!4m5!3m4!1s0x47b8ac984c406469:0x5445cd8ac7bfc850!8m2!3d51.1941686!4d6.4315393"
+              >Mönchengladbach</a
+            >
+            aufgewachsen.
           </p>
           <br />
           <p>
@@ -100,7 +106,8 @@
             habe im Jahr 2020 an der Berner Fachhochschule mit dem
             Bachlorstudiengang Wirtschaftsinformatik begonnen. In meiner
             Freitzeit spiele ich beim FC Wattenwil Fussball und trainiere auch
-            beim gleichen Verein eine Junioren Mannschaft.
+            beim gleichen Verein eine Junioren Mannschaft. Auserdem gehe ich
+            gerne wandern und löse mit Freunden zusammen spannende Escape Rooms.
           </p>
         </div>
       </div>
@@ -198,7 +205,7 @@
 
       <div class="row">
         <div class="col-md-2 col-sm-12">
-          <h3 data-aos="fade-right">Berufserfahrungen</h3>
+          <h3 data-aos="fade-right">Erfahrungen</h3>
         </div>
         <div class="col-md-9 col-sm-12 offset-md-1">
           <div class="exp">
@@ -345,26 +352,88 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="portfolio">
-    <h2>Portfolio Ideen</h2>
-
-    <ul>
-      <li>
-        <a href="https://codepen.io/juliangarnier/pen/ZeEpgd"
-          >Drawing Animation</a
-        >
-      </li>
-      <li>
-        <a href="https://codepen.io/SoyEva/pen/gXqWNq">Scroll Animation</a>
-      </li>
-      <li>
-        <a href="https://codepen.io/MightyShaban/pen/qBqRMN">Nav Bar</a>
-      </li>
-    </ul>
+  <div class="gallery" id="gallery">
+    <div class="container-port">
+      <div id="carousel">
+        <figure>
+          <a href="https://buchboerse-ch.web.app/login"
+            ><img
+              class="logo"
+              src="/Bilder/buchboerse.png"
+              alt="Buchbörse"
+              title="Projekt im Rahmen des 4. Semesters: Buchbörse"
+          /></a>
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/New York.JPG"
+            alt="New York"
+            title="Ab und zu verreise ich gerne."
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/Bluefire.jpg"
+            alt="Fusballspielen"
+            title="Teilnehmer am jährlichen Dorfturnier"
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/Borussia.jfif"
+            alt="Stadion Borussiapark"
+            title="Nicht nur Fussballspielen, sondern auch Fussball schauen ist eine Leidenschaft von mir."
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/Brienzersee.jpg"
+            alt="Brienzersee"
+            title="Ich gehe aussedem auch sehr gerne Wandern. Am liebsten mit guter Aussicht!"
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/UeberdenWolken.jpg"
+            alt="Über den Wolken"
+            title="Die Aussicht von weit oben, gefällt mir immer sehr gut!"
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/Eiger_Mönch.jpg"
+            alt="Eiger und Mönch"
+            title="Sehr Hoch und weiss ist mir am liebsten."
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/Milo.jpg"
+            alt="Milo, eine Katze"
+            title="Ich bin sehr Tierlieb und verbringe viel Zeit mit meiner Katze."
+          />
+        </figure>
+        <figure>
+          <img
+            class="logo"
+            src="/Bilder/Pool.jpg"
+            alt="Bild vom Pool"
+            title="In den Ferien, entspanne ich auch gerne mal "
+          />
+        </figure>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <div class="footer-content">
+    <div class="footer-content" id="contact">
       <div>
         <h4>E-Mail Adresse</h4>
         <p>simon-rofalski@gmx.de</p>

@@ -272,7 +272,11 @@ a:visited {
 
 @media (max-width: 992px) {
   .picture {
-    display: none;
+    margin-left: 18vh;
+    margin-bottom: 10vh;
+  }
+  .überschrift {
+    margin-bottom: 100vh;
   }
 }
 

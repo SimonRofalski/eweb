@@ -29,17 +29,18 @@ li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #212529;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ce2626;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #159296;
+  background: #940303;
 }
 
 @media (max-width: 412px) {
@@ -81,7 +82,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.09);
+  background: rgba(240, 235, 235, 0.09);
   z-index: 1;
 }
 
@@ -97,6 +98,7 @@ li {
   display: none;
   padding: 0;
   background: rgba(187, 5, 5, 0.8);
+  border-radius: 20px;
 }
 
 .nav-content > li {
@@ -112,18 +114,19 @@ li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 !important;
+  border-radius: 20px;
 }
 
 .nav-content > li > a:hover,
 .active {
-  color: #11abb0 !important;
+  color: #000000 !important;
 }
 
 .toggler {
   padding: 10px 15px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(238, 9, 9, 0.8);
   display: block;
   cursor: pointer;
   width: min-content;
@@ -131,6 +134,7 @@ li {
   width: -moz-min-content;
   width: -ms-min-content;
   width: -o-min-content;
+  border-radius: 20px;
 }
 
 .bar1,
@@ -160,12 +164,13 @@ li {
 
 .nav-content #dropdown-menu {
   display: none;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(187, 5, 5, 0.8);
   position: absolute;
   top: 0;
   left: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px 0;
+  border-radius: 20px;
 }
 
 .nav-content #dropdown-menu ul {
@@ -183,7 +188,7 @@ li {
 
 #header .dropdown-item:hover,
 #header .dropdown-item.active {
-  color: #11abb0;
+  color: #000808;
   background: transparent !important;
 }
 
@@ -215,7 +220,7 @@ li {
 .mouse {
   width: 50px;
   height: 90px;
-  border: 2px solid #e0ded6;
+  border: 3px solid #e0d6d6;
   border-radius: 60px;
 }
 
@@ -254,7 +259,7 @@ li {
 /* Link Mönchengladbach*/
 a:link,
 a:visited {
-  color: white;
+  color: #ce2626;
 }
 
 #about h2 {
@@ -291,12 +296,12 @@ a:visited {
 #cv hr {
   height: 1px;
   border: none;
-  background: #ddd;
+  background: #ce2626;
   margin: 50px auto;
 }
 
 #cv .row h3 {
-  border-bottom: 3px solid #11abb0;
+  border-bottom: 3px solid #ce2626;
   font-size: 24px;
   padding-bottom: 5px;
   width: min-content;
@@ -316,7 +321,7 @@ a:visited {
 }
 
 .skills > h4 {
-  color: #11abb0;
+  color: #ce2626;
   margin-bottom: 40px;
 }
 
@@ -343,7 +348,7 @@ a:visited {
 }
 
 .exp > h4 {
-  color: #11abb0;
+  color: #ce2626;
   margin-bottom: 40px;
 }
 
@@ -357,7 +362,7 @@ a:visited {
 }
 
 #cv .box h6 {
-  color: #11abb0;
+  color: #ce2626;
 }
 
 #cv .box p {
@@ -372,17 +377,17 @@ a:visited {
 }
 
 /* G A L L E R Y */
+#gallery {
+  background-color: #2b2b2b;
 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center !important;
+}
 .gallery h3 {
-  border-bottom: 3px solid #11abb0;
   font-size: 24px;
-  padding-bottom: 5px;
-  width: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: -ms-min-content;
-  width: -o-min-content;
-  margin-bottom: 50px;
+  font-family: "Lato";
+  color: #f5f5f5;
 }
 
 * {
@@ -473,7 +478,7 @@ a:visited {
 /*  F O O T E R  */
 
 footer {
-  background: #0f0f0f;
+  background: #2b2b2b;
   position: relative;
   padding: 80px;
 }
@@ -508,7 +513,7 @@ footer {
 }
 
 .footer-content a:hover {
-  color: #fff;
+  color: #ce2626;
 }
 
 .footer-content a + a {

@@ -339,8 +339,33 @@ a:visited {
   background: #ddd;
 }
 
-#cv .skill-item .progress-bar {
-  background: #222;
+#cv .skill-item .progress-bar-html {
+  background: RGB(255, 109, 0);
+}
+#cv .skill-item .progress-bar-css {
+  background: RGB(3, 155, 229);
+}
+#cv .skill-item .progress-bar-js {
+  background: RGB(255, 222, 37);
+}
+#cv .skill-item .progress-bar-python {
+  background: RGB(255, 202, 29);
+}
+#cv .skill-item .progress-bar-angular {
+  background: RGB(183, 28, 28);
+}
+
+#cv .skill-item .progress-bar-german {
+  background-image: url("Bilder/Flag_of_Germany.png");
+  background-size: contain;
+}
+#cv .skill-item .progress-bar-english {
+  background-image: url("Bilder/Flag_of_GB.png");
+  background-size: contain;
+}
+
+#cv .skill-item .rightmove {
+  float: right;
 }
 
 .exp + .exp {
@@ -478,7 +503,7 @@ a:visited {
 /*  F O O T E R  */
 
 footer {
-  background: #2b2b2b;
+  background: #140d0d;
   position: relative;
   padding: 80px;
 }

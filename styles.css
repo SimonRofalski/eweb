@@ -279,6 +279,7 @@ a:visited {
   .picture {
     margin-left: 18vh;
     margin-bottom: 10vh;
+    padding-right: 0;
   }
   .überschrift {
     margin-bottom: 100vh;
@@ -404,7 +405,6 @@ a:visited {
 /* G A L L E R Y */
 #gallery {
   background-color: #2b2b2b;
-
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center !important;

@@ -144,8 +144,9 @@ li {
   height: 3px;
   background-color: #f5f5f5;
   margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5%;
 }
 
 .change .bar1 {
@@ -357,12 +358,10 @@ a:visited {
 }
 
 #cv .skill-item .progress-bar-german {
-  background-image: url("Bilder/Flag_of_Germany.png");
-  background-size: contain;
+  background-color: darkslateblue;
 }
 #cv .skill-item .progress-bar-english {
-  background-image: url("Bilder/Flag_of_GB.png");
-  background-size: contain;
+  background-color: darkslateblue;
 }
 
 #cv .skill-item .rightmove {

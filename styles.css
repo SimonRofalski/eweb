@@ -276,6 +276,12 @@ a:visited {
   width: 200px;
 }
 
+@media (min-width: 500px) {
+  #about iframe {
+    padding-left: 250px;
+  }
+}
+
 @media (max-width: 992px) {
   .picture {
     margin-left: 18vh;

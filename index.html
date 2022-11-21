@@ -32,6 +32,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
@@ -118,7 +119,7 @@
           <p>
             Ich bin oft draussen an der frischen Luft. Deshalb ist mir das
             Wetter auch sehr wichtig. Ich informiere mich immer, bevor ich raus
-            gehe, wie das Wetter gerade ist. Denn ist gibt keine schlechtes
+            gehe, wie das Wetter gerade ist. Denn ist gibt kein schlechtes
             Wetter, nur schlechte Kleidung. :)
           </p>
           <iframe
@@ -130,7 +131,7 @@
               border-radius: 18px;
               border-color: transparent;
             "
-            src="https://api.wetteronline.de/wetterwidget?gid=x1935&modeid=FC2&seourl=muehlethurnen&locationname=Mühlethurnen&lang=de"
+            src="https://api.wetteronline.de/wetterwidget?gid=x1935&modeid=FC2&seourl=muehlethurnen&locationname=Bern&lang=de"
           ></iframe>
         </div>
       </div>
@@ -483,12 +484,7 @@
           />
         </figure>
         <figure>
-          <img
-            class="logo"
-            src="Bilder/UeberdenWolken.jpg"
-            alt="Über den Wolken"
-            title="Die Aussicht von weit oben, gefällt mir immer sehr gut!"
-          />
+          <canvas id="myChart"></canvas>
         </figure>
         <figure>
           <img

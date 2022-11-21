@@ -444,7 +444,7 @@ a:visited {
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  animation: rotation 20s infinite linear;
+  animation: rotation 15s infinite linear;
 }
 #carousel:hover {
   animation-play-state: paused;
@@ -501,8 +501,14 @@ a:visited {
 }
 
 #carousel img:hover {
-  border-color: #0f0f0f;
+  border-color: red;
   border-radius: 2px;
+}
+
+#mychart {
+  max-width: 184px;
+  max-height: 114px;
+  background-color: rgb(248, 82, 82);
 }
 
 /*  F O O T E R  */

@@ -26,3 +26,22 @@ $(".menu-overlay").on("click", function () {
   $("#dropdown-menu").slideUp();
   $(".menu-overlay").hide();
 });
+
+const ctx = document.getElementById("myChart");
+
+new Chart(ctx, {
+  type: "pie",
+  data: {
+    labels: ["Arbeiten", "Studium"],
+    datasets: [
+      {
+        label: "Pensum in %",
+        data: [60, 40],
+        borderWidth: 0.5,
+        backgroundColor: ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+        hoverOffset: 6,
+        hoverBorderJoinStyle: "bevel",
+      },
+    ],
+  },
+});
